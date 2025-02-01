@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2980b9;
+    padding: 10px 0;
+    border-bottom: 5px solid #ecf0f1;
+}
+
+.header h3 {
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header h3:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    color: #f39c12;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Cheat Sections */
+#cheatOneDiv, #cheatTwoDiv, #cheatThreeDiv {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Ublock Styles */
+.uBlockD, .DevtoolsD, .TipsD {
+    max-width: 900px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.uBlockD:hover, .DevtoolsD:hover, .TipsD:hover {
+    transform: scale(1.05);
+}
+
+h3, h4 {
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+p, a {
+    font-size: 1rem;
+    color: #bdc3c7;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+img {
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button */
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Transitions for Header and Cheat Divs */
+.home, .help, .contact {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.home {
+    transform: translateX(-150px);
+}
+
+.help {
+    transform: translateY(-40px);
+}
+
+.contact {
+    transform: translate(150px, -80px);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .header h3 {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .uBlockD, .DevtoolsD {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
