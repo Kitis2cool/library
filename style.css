@@ -48,7 +48,7 @@ h1, h3, h4, p {
 }
 
 /* Cheat Sections */
-#cheatOneDiv, #cheatTwoDiv, #cheatThreeDiv {
+#cheatOneDiv, #cheatTwoDiv, #cheatThreeDiv, #cheatFourDiv{
     text-align: center;
     font-size: 1.2rem;
     color: #ecf0f1;
@@ -57,7 +57,7 @@ h1, h3, h4, p {
 }
 
 /* Ublock Styles */
-.uBlockD, .DevtoolsD, .TipsD {
+.uBlockD, .DevtoolsD, .TipsD, .TutD {
     max-width: 900px;
     width: 100%;
     margin: 30px auto;
@@ -68,7 +68,7 @@ h1, h3, h4, p {
     transition: transform 0.3s ease-in-out;
 }
 
-.uBlockD:hover, .DevtoolsD:hover, .TipsD:hover {
+.uBlockD:hover, .DevtoolsD:hover, .TipsD:hover, .TutD:hover {
     transform: scale(1.05);
 }
 
