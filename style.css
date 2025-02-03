@@ -20,8 +20,11 @@ h1, h3, h4, p {
     background-color: #2980b9;
     padding: 10px 0;
     border-bottom: 5px solid #ecf0f1;
-    flex-wrap: nowrap; /* Ensure the headers don't wrap */
+    flex-wrap: nowrap;
+    height: 60px; /* Give it a fixed height if it's too small */
+    z-index: 10; /* Ensure it's not being hidden behind other elements */
 }
+
 
 .header h3 {
     margin: 0 20px;
