@@ -20,21 +20,25 @@ h1, h3, h4, p {
     background-color: #2980b9;
     padding: 10px 0;
     border-bottom: 5px solid #ecf0f1;
+    flex-wrap: nowrap; /* Ensure the headers don't wrap */
 }
 
 .header h3 {
     margin: 0 20px;
+    padding: 0; /* Ensure padding is removed */
     font-weight: 500;
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .header h3:hover {
     color: #e74c3c;
     text-decoration: underline;
 }
+
 
 /* Title */
 .title {
