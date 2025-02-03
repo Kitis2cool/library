@@ -1,6 +1,7 @@
 var uBlockOffset = 1
 var DevtoolsOffset = 1
 var TipsOffset = 1
+var TutOffset = 1
 function showUBlock(){
   if (uBlockOffset == 1) {
       document.getElementById("uBlockD").style.display = ""
@@ -26,6 +27,16 @@ function showTips(){
     } else {
       document.getElementById("TipsD").style.display = "none"
       TipsOffset--
+    }
+}
+
+function showTut(){
+  if (TutOffset == 1) {
+      document.getElementById("TutD").style.display = ""
+      TutOffset++
+    } else {
+      document.getElementById("TutD").style.display = "none"
+      TutOffset--
     }
 }
 
